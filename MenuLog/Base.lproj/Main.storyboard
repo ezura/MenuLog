@@ -15,11 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-NB-zDP">
+                                <rect key="frame" x="277" y="451" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Ta7-6i-r5f" kind="presentation" id="7kr-rZ-m0v"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Upv-NB-zDP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="166" id="0fZ-Bg-pSC"/>
+                            <constraint firstItem="Upv-NB-zDP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qA3-6L-aZd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Create Lunch Box View Controller-->
+        <scene sceneID="bw9-qp-dFP">
+            <objects>
+                <viewController id="Ta7-6i-r5f" customClass="CreateLunchBoxViewController" customModule="MenuLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TXN-dx-qkE"/>
+                        <viewControllerLayoutGuide type="bottom" id="MKX-Pd-6Qd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5RS-D2-mnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiT-w3-pay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="425"/>
         </scene>
     </scenes>
 </document>

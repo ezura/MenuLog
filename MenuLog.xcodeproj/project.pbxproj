@@ -14,6 +14,8 @@
 		E0C3519C1BE9D2E600D8D3B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C3519A1BE9D2E600D8D3B8 /* LaunchScreen.storyboard */; };
 		E0C351A71BE9D2E600D8D3B8 /* MenuLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351A61BE9D2E600D8D3B8 /* MenuLogTests.swift */; };
 		E0C351B21BE9D2E600D8D3B8 /* MenuLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351B11BE9D2E600D8D3B8 /* MenuLogUITests.swift */; };
+		E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		E0C351AD1BE9D2E600D8D3B8 /* MenuLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C351B11BE9D2E600D8D3B8 /* MenuLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLogUITests.swift; sourceTree = "<group>"; };
 		E0C351B31BE9D2E600D8D3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLunchBoxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		E0C351901BE9D2E600D8D3B8 /* MenuLog */ = {
 			isa = PBXGroup;
 			children = (
+				E0C351BF1BE9E52800D8D3B8 /* lunchBox */,
 				E0C351911BE9D2E600D8D3B8 /* AppDelegate.swift */,
 				E0C351931BE9D2E600D8D3B8 /* ViewController.swift */,
 				E0C351951BE9D2E600D8D3B8 /* Main.storyboard */,
@@ -123,6 +127,15 @@
 				E0C351B31BE9D2E600D8D3B8 /* Info.plist */,
 			);
 			path = MenuLogUITests;
+			sourceTree = "<group>";
+		};
+		E0C351BF1BE9E52800D8D3B8 /* lunchBox */ = {
+			isa = PBXGroup;
+			children = (
+				E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */,
+			);
+			name = lunchBox;
+			path = CreateLunchBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 			files = (
 				E0C351941BE9D2E600D8D3B8 /* ViewController.swift in Sources */,
 				E0C351921BE9D2E600D8D3B8 /* AppDelegate.swift in Sources */,
+				E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C351B21BE9D2E600D8D3B8 /* MenuLogUITests.swift in Sources */,
+				E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
