@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
@@ -45,12 +46,26 @@
                     <view key="view" contentMode="scaleToFill" id="5RS-D2-mnJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-la-NTY" userLabel="preview">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q9v-la-NTY" firstAttribute="leading" secondItem="5RS-D2-mnJ" secondAttribute="leading" id="9fu-pK-b7i"/>
+                            <constraint firstItem="MKX-Pd-6Qd" firstAttribute="top" secondItem="Q9v-la-NTY" secondAttribute="bottom" id="CDn-Il-Q1c"/>
+                            <constraint firstAttribute="trailing" secondItem="Q9v-la-NTY" secondAttribute="trailing" id="MUl-o2-RT8"/>
+                            <constraint firstItem="Q9v-la-NTY" firstAttribute="top" secondItem="TXN-dx-qkE" secondAttribute="bottom" id="wHE-Cf-HGv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewImageView" destination="Q9v-la-NTY" id="TR4-58-fqe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZiT-w3-pay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="425"/>
+            <point key="canvasLocation" x="1149" y="381"/>
         </scene>
     </scenes>
 </document>

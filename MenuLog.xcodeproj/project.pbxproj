@@ -16,6 +16,7 @@
 		E0C351B21BE9D2E600D8D3B8 /* MenuLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351B11BE9D2E600D8D3B8 /* MenuLogUITests.swift */; };
 		E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E0C351C71BE9F17600D8D3B8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C351C61BE9F17600D8D3B8 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		E0C351B11BE9D2E600D8D3B8 /* MenuLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLogUITests.swift; sourceTree = "<group>"; };
 		E0C351B31BE9D2E600D8D3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLunchBoxViewController.swift; sourceTree = "<group>"; };
+		E0C351C61BE9F17600D8D3B8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C351C71BE9F17600D8D3B8 /* CoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 		E0C351851BE9D2E600D8D3B8 = {
 			isa = PBXGroup;
 			children = (
+				E0C351C61BE9F17600D8D3B8 /* CoreMedia.framework */,
 				E0C351901BE9D2E600D8D3B8 /* MenuLog */,
 				E0C351A51BE9D2E600D8D3B8 /* MenuLogTests */,
 				E0C351B01BE9D2E600D8D3B8 /* MenuLogUITests */,
@@ -205,6 +209,7 @@
 				TargetAttributes = {
 					E0C3518D1BE9D2E600D8D3B8 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 32A38QPD5H;
 					};
 					E0C351A11BE9D2E600D8D3B8 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -343,6 +348,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -362,9 +368,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "34b9ed6e-df4c-4b6f-a2e6-e972647cfdab";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -400,8 +407,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "34b9ed6e-df4c-4b6f-a2e6-e972647cfdab";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -411,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MenuLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ezura.MenuLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MenuLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ezura.MenuLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +510,7 @@
 				E0C351B81BE9D2E600D8D3B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C351B91BE9D2E600D8D3B8 /* Build configuration list for PBXNativeTarget "MenuLogTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				E0C351BB1BE9D2E600D8D3B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0C351BC1BE9D2E600D8D3B8 /* Build configuration list for PBXNativeTarget "MenuLogUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				E0C351BE1BE9D2E600D8D3B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
