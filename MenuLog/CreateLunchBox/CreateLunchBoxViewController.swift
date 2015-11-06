@@ -16,7 +16,7 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
     
     var imageDataSourceType: ImageDataSourceType = ImageDataSourceType.ImageDataSourceTypePhotoLibrary
     
-    var shouldClose: Bool = false
+    private var shouldClose: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,14 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
+        if (shouldClose) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+            return
+        }
+        
         // 戻ってきたときも呼ばれてしまうので画像を取得した後は呼ばない
-        if (!shouldClose && previewImageView.image == nil) {
+        if (previewImageView.image == nil) {
             if let imagePicker = lunchBoxImagePicker {
                 imagePicker.showImagePickerView(self,
                     didFinishPickingImage: { [unowned self]
@@ -41,7 +47,6 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
                     },
                     didCancel: { [unowned self] () -> Void in
                         self.shouldClose = true
-                        self.dismissViewControllerAnimated(true, completion: nil)
                     })
             }
         }

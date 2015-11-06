@@ -12,7 +12,7 @@ enum ImageDataSourceType: Int {
     case ImageDataSourceTypeCamera, ImageDataSourceTypePhotoLibrary
 }
 
-class ImageDataSource: NSObject {
+class ImageDataSource: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var onDidFinishPickingImage: ((UIImage) -> Void)?
     var onDidCancel: (() -> Void)?
     
@@ -56,8 +56,8 @@ class ImageDataSource: NSObject {
     {
         if let didCancel = onDidCancel {
             didCancel()
-            return
         }
+        picker.dismissViewControllerAnimated(true, completion: nil);
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])

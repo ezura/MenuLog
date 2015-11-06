@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraDataSource:ImageDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraDataSource:ImageDataSource {
     /**
     画像をカメラで取ってくる
     */
@@ -20,7 +20,6 @@ class CameraDataSource:ImageDataSource, UIImagePickerControllerDelegate, UINavig
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
             imagePicker.allowsEditing = true
-            imagePicker.navigationItem.setHidesBackButton(true, animated: true)
             
             rootViewController.presentViewController(imagePicker, animated: true, completion: nil)
         }
@@ -29,7 +28,6 @@ class CameraDataSource:ImageDataSource, UIImagePickerControllerDelegate, UINavig
             // TODO: カメラ使えないアラート
             if let didCancel = onDidCancel {
                 didCancel()
-                return
             }
         }
     }

@@ -8,14 +8,13 @@
 
 import UIKit
 
-class PhotoLibraryDataSource: ImageDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PhotoLibraryDataSource: ImageDataSource {
     override func captureLunchBoxImage(rootViewController: UIViewController) {
         var imagePicker: UIImagePickerController = UIImagePickerController()
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         imagePicker.allowsEditing = true
-        imagePicker.navigationItem.setHidesBackButton(true, animated: true)
         
         rootViewController.presentViewController(imagePicker, animated: true, completion: nil)
     }
