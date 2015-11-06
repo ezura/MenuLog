@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E09FB89F1BEB2E740048F7D8 /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB89E1BEB2E740048F7D8 /* ImageDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A01BEB2E740048F7D8 /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB89E1BEB2E740048F7D8 /* ImageDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A11BEB2E740048F7D8 /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB89E1BEB2E740048F7D8 /* ImageDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A41BEB4A190048F7D8 /* CameraDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A31BEB4A190048F7D8 /* CameraDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A51BEB4A190048F7D8 /* CameraDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A31BEB4A190048F7D8 /* CameraDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A61BEB4A190048F7D8 /* CameraDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A31BEB4A190048F7D8 /* CameraDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A81BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A71BEB577D0048F7D8 /* PhotoLibraryDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8A91BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A71BEB577D0048F7D8 /* PhotoLibraryDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		E09FB8AA1BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09FB8A71BEB577D0048F7D8 /* PhotoLibraryDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		E0C351921BE9D2E600D8D3B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351911BE9D2E600D8D3B8 /* AppDelegate.swift */; };
 		E0C351941BE9D2E600D8D3B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351931BE9D2E600D8D3B8 /* ViewController.swift */; };
 		E0C351971BE9D2E600D8D3B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C351951BE9D2E600D8D3B8 /* Main.storyboard */; };
@@ -37,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E09FB89E1BEB2E740048F7D8 /* ImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataSource.swift; sourceTree = "<group>"; };
+		E09FB8A31BEB4A190048F7D8 /* CameraDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraDataSource.swift; sourceTree = "<group>"; };
+		E09FB8A71BEB577D0048F7D8 /* PhotoLibraryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryDataSource.swift; sourceTree = "<group>"; };
 		E0C3518E1BE9D2E600D8D3B8 /* MenuLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C351911BE9D2E600D8D3B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C351931BE9D2E600D8D3B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E09FB8A21BEB49BB0048F7D8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E09FB89E1BEB2E740048F7D8 /* ImageDataSource.swift */,
+				E09FB8A31BEB4A190048F7D8 /* CameraDataSource.swift */,
+				E09FB8A71BEB577D0048F7D8 /* PhotoLibraryDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 		E0C351851BE9D2E600D8D3B8 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +158,7 @@
 		E0C351BF1BE9E52800D8D3B8 /* lunchBox */ = {
 			isa = PBXGroup;
 			children = (
+				E09FB8A21BEB49BB0048F7D8 /* DataSource */,
 				E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */,
 			);
 			name = lunchBox;
@@ -274,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C351941BE9D2E600D8D3B8 /* ViewController.swift in Sources */,
+				E09FB89F1BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
 				E0C351921BE9D2E600D8D3B8 /* AppDelegate.swift in Sources */,
 				E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
+				E09FB8A41BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
+				E09FB8A81BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C351A71BE9D2E600D8D3B8 /* MenuLogTests.swift in Sources */,
+				E09FB8A91BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */,
+				E09FB8A01BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
+				E09FB8A51BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09FB8AA1BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */,
 				E0C351B21BE9D2E600D8D3B8 /* MenuLogUITests.swift in Sources */,
+				E09FB8A61BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
 				E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
+				E09FB8A11BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
