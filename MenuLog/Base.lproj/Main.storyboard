@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,14 +24,14 @@
                                         <rect key="frame" x="31" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="撮影"/>
                                         <connections>
-                                            <segue destination="Ta7-6i-r5f" kind="presentation" identifier="top_createLunchBox_camera" id="7kr-rZ-m0v"/>
+                                            <segue destination="Ta7-6i-r5f" kind="show" identifier="top_createLunchBox_camera" id="7kr-rZ-m0v"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49i-MC-Yc0">
                                         <rect key="frame" x="0.0" y="38" width="92" height="30"/>
                                         <state key="normal" title="Photo Library"/>
                                         <connections>
-                                            <segue destination="Ta7-6i-r5f" kind="presentation" identifier="top_createLunchBox_photoLibrary" id="l4l-a9-6zI"/>
+                                            <segue destination="Ta7-6i-r5f" kind="show" identifier="top_createLunchBox_photoLibrary" id="l4l-a9-6zI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,6 +98,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l4l-a9-6zI"/>
+        <segue reference="7kr-rZ-m0v"/>
     </inferredMetricsTieBreakers>
 </document>

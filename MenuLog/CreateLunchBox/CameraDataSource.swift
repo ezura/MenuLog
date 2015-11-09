@@ -21,7 +21,7 @@ class CameraDataSource:ImageDataSource {
             imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
             imagePicker.allowsEditing = true
             
-            rootViewController.presentViewController(imagePicker, animated: true, completion: nil)
+            rootViewController.presentViewController(imagePicker, animated: false, completion: nil)
         }
         else
         {
