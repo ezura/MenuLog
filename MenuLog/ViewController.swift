@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let segueItentifier = segue.identifier else {
+            return
+        }
+        
+        if segueItentifier == "top_createLunchBox_camera" {
+            let nextViewController = segue.destinationViewController as! CreateLunchBoxViewController
+            nextViewController.imageDataSourceType = .ImageDataSourceTypeCamera
+        }
+        else if segueItentifier == "top_createLunchBox_photoLibrary" {
+            let nextViewController = segue.destinationViewController as! CreateLunchBoxViewController
+            nextViewController.imageDataSourceType = .ImageDataSourceTypePhotoLibrary
+        }
+    }
 }
 
