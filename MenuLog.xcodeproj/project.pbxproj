@@ -26,6 +26,12 @@
 		E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E0C351C71BE9F17600D8D3B8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C351C61BE9F17600D8D3B8 /* CoreMedia.framework */; };
+		E0D73C021BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C011BF096780012B368 /* CALayer+RuntimeAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		E0D73C031BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C011BF096780012B368 /* CALayer+RuntimeAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		E0D73C041BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C011BF096780012B368 /* CALayer+RuntimeAttribute.swift */; settings = {ASSET_TAGS = (); }; };
+		E0D73C0A1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C091BF0A04C0012B368 /* AlphaTransitionButton.swift */; settings = {ASSET_TAGS = (); }; };
+		E0D73C0B1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C091BF0A04C0012B368 /* AlphaTransitionButton.swift */; settings = {ASSET_TAGS = (); }; };
+		E0D73C0C1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D73C091BF0A04C0012B368 /* AlphaTransitionButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,8 @@
 		E0C351B31BE9D2E600D8D3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0C351C31BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLunchBoxViewController.swift; sourceTree = "<group>"; };
 		E0C351C61BE9F17600D8D3B8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E0D73C011BF096780012B368 /* CALayer+RuntimeAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+RuntimeAttribute.swift"; sourceTree = "<group>"; };
+		E0D73C091BF0A04C0012B368 /* AlphaTransitionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaTransitionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 				E0C351911BE9D2E600D8D3B8 /* AppDelegate.swift */,
 				E0C351931BE9D2E600D8D3B8 /* ViewController.swift */,
 				E0C351951BE9D2E600D8D3B8 /* Main.storyboard */,
+				E0D73C001BF096240012B368 /* Util */,
 				E0C351981BE9D2E600D8D3B8 /* Assets.xcassets */,
 				E0C3519A1BE9D2E600D8D3B8 /* LaunchScreen.storyboard */,
 				E0C3519D1BE9D2E600D8D3B8 /* Info.plist */,
@@ -163,6 +172,15 @@
 			);
 			name = lunchBox;
 			path = CreateLunchBox;
+			sourceTree = "<group>";
+		};
+		E0D73C001BF096240012B368 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E0D73C011BF096780012B368 /* CALayer+RuntimeAttribute.swift */,
+				E0D73C091BF0A04C0012B368 /* AlphaTransitionButton.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D73C021BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */,
 				E0C351941BE9D2E600D8D3B8 /* ViewController.swift in Sources */,
 				E09FB89F1BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
+				E0D73C0A1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */,
 				E0C351921BE9D2E600D8D3B8 /* AppDelegate.swift in Sources */,
 				E0C351C41BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
 				E09FB8A41BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
@@ -312,6 +332,8 @@
 				E0C351A71BE9D2E600D8D3B8 /* MenuLogTests.swift in Sources */,
 				E09FB8A91BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */,
 				E09FB8A01BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
+				E0D73C0B1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */,
+				E0D73C031BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */,
 				E09FB8A51BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,10 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E09FB8AA1BEB577D0048F7D8 /* PhotoLibraryDataSource.swift in Sources */,
+				E0D73C0C1BF0A04C0012B368 /* AlphaTransitionButton.swift in Sources */,
 				E0C351B21BE9D2E600D8D3B8 /* MenuLogUITests.swift in Sources */,
 				E09FB8A61BEB4A190048F7D8 /* CameraDataSource.swift in Sources */,
 				E0C351C51BE9E7E300D8D3B8 /* CreateLunchBoxViewController.swift in Sources */,
 				E09FB8A11BEB2E740048F7D8 /* ImageDataSource.swift in Sources */,
+				E0D73C041BF096780012B368 /* CALayer+RuntimeAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
