@@ -33,7 +33,7 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
         super.viewDidAppear(animated)
         
         if (shouldClose) {
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.close()
             return
         }
         
@@ -52,26 +52,10 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
         }
     }
     
-//    /**
-//    お弁当の画像をどこかから取ってくる
-//    - returns: お弁当画像
-//    */
-//    private func captureLunchBoxImage() {
-//        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
-//        {
-//            cameraUI = UIImagePickerController()
-//            cameraUI.delegate = self
-////            cameraUI.sourceType = UIImagePickerControllerSourceType.Camera
-//            cameraUI.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-//            cameraUI.allowsEditing = true
-//            
-//            self.presentViewController(cameraUI, animated: true, completion: nil)
-//        }
-//        else
-//        {
-//            // error msg
-//        }
-//    }
+    private func close()
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     /**
     とってきたお弁当の画像を表示する
@@ -85,33 +69,14 @@ class CreateLunchBoxViewController: UIViewController, UIImagePickerControllerDel
     private func saveLunchBoxImage() {
         // TODO: 保存
     }
-
-//    /*
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//    }
-//    */
-//    
-//    //Mark- UIImagePickerController Delegate
-//    
-//    func imagePickerControllerDidCancel(picker:UIImagePickerController)
-//    {
-//        self.dismissViewControllerAnimated(true, completion: nil)
-//    }
-//    
-//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
-//    {
-//        guard let pickedObject = info[UIImagePickerControllerOriginalImage] else {
-//            // TODO: エラーハンドリング
-//            return
-//        }
-//        let pickedImage = pickedObject as! UIImage
-//        self.previewLunchBoxImage(pickedImage)
-//        picker.dismissViewControllerAnimated(true, completion: nil);
-//    }
+    
+    //-- MARK: ユーザアクション
+    @IBAction func saveButtonDidTouch(sender: UIButton) {
+        self.saveLunchBoxImage()
+    }
+    
+    @IBAction func cancelButtonDidTouch(sender: UIButton) {
+        self.close()
+    }
 
 }
