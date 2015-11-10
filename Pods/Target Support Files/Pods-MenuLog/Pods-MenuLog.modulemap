@@ -1,0 +1,6 @@
+framework module Pods_MenuLog {
+  umbrella header "Pods-MenuLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
